@@ -1,0 +1,1 @@
+// React 앱 번들 placeholder
