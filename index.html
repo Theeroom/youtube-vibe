@@ -1,12 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YouTube VIBE Index</title>
+  <style>
+    body { background-color: #111; color: #fff; font-family: sans-serif; padding: 2rem; }
+    input, button { padding: 0.5rem; font-size: 1rem; }
+    .channel-card { border: 1px solid #444; border-radius: 8px; padding: 1rem; margin-top: 1rem; background: #1a1a1a; }
+  </style>
 </head>
-<body style="background-color: #111; color: #fff;">
-  <div id="root">YouTube VIBE Index 로딩 중...</div>
+<body>
+  <h1>YouTube VIBE Index 비교기</h1>
+  <p>채널 URL을 입력하고 버튼을 누르세요.</p>
+  <input id="channelUrl" placeholder="채널 URL 입력" style="width: 300px;" />
+  <button onclick="addChannel()">채널 추가</button>
+  <div id="results"></div>
+
   <script src="main.js"></script>
 </body>
 </html>
